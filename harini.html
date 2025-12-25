@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Designer Profile – Harini Ravisankar | ModaSou</title>
+
+<style>
+/* ===== COLOR PALETTE =====
+Chocolate Brown : #4b2e1e
+Dark Brown      : #2a1a12
+Golden          : #c9a24d
+Light Golden    : #f3e6c9
+Ivory           : #faf7f2
+*/
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #faf7f2;
+  color: #2a1a12;
+}
+
+/* PAGE WRAPPER */
+.profile-wrapper {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #4b2e1e, #2a1a12);
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 30px;
+}
+
+/* IMAGE PLACEHOLDER */
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f3e6c9, #c9a24d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b2e1e;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+/* BASIC INFO */
+.profile-info h1 {
+  color: #f3e6c9;
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.profile-info h3 {
+  color: #c9a24d;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.profile-info span {
+  display: inline-block;
+  background: rgba(201,162,77,0.15);
+  color: #f3e6c9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* CONTENT SECTION */
+.profile-content {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* DESCRIPTION */
+.profile-description h2,
+.profile-speciality h2 {
+  color: #c9a24d;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.profile-description p {
+  color: #faf7f2;
+  line-height: 1.7;
+  font-size: 15.5px;
+}
+
+/* SPECIALITY */
+.profile-speciality ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.profile-speciality li {
+  background: rgba(255,255,255,0.06);
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: #faf7f2;
+  border-left: 4px solid #c9a24d;
+}
+
+/* CTA */
+.profile-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.profile-cta a {
+  display: inline-block;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #c9a24d, #f3e6c9);
+  color: #2a1a12;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.profile-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(201,162,77,0.4);
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="profile-wrapper">
+
+  <!-- HEADER -->
+  <div class="profile-header">
+    <div class="profile-image">H</div>
+
+    <div class="profile-info">
+      <h1>Harini Ravisankar</h1>
+      <h3>Fashion Designer · Chennai</h3>
+      <span>Mens & Women’s Wear</span>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="profile-content">
+
+    <!-- DESCRIPTION -->
+    <div class="profile-description">
+      <h2>About the Designer</h2>
+      <p>
+        Harini Ravisankar is a skilled fashion designer with over 5 years of experience
+        in the fashion industry. Currently owning a fashion designing company called
+        Annkh, she has honed her expertise in fashion illustration, styling, and over
+        15 related skills.
+        <br><br>
+        Her professional journey includes significant roles such as Graphic Designer
+        at Gurpzit, where she specialized in printing and graphics, and internships at
+        prestigious organizations like Reliance Retail and Naidu Hall, focusing on
+        woven and knitwear design.
+        <br><br>
+        A graduate of the National Institute of Fashion Technology (NIFT) with a
+        Bachelor’s degree in Knitwear Design, Harini’s strong educational foundation
+        and industry experience make her an invaluable asset to ModaSou.
+      </p>
+    </div>
+
+    <!-- SPECIALITY -->
+    <div class="profile-speciality">
+      <h2>Specialisation</h2>
+      <ul>
+        <li>Men’s Wear Design</li>
+        <li>Women’s Wear Design</li>
+        <li>Fashion Illustration & Styling</li>
+        <li>Knitwear & Woven Apparel</li>
+        <li>Custom & Bespoke Clothing</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="profile-cta">
+    <a href="#">Connect With Designer</a>
+  </div>
+
+</div>
+
+</body>
+</html>
