@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pickup Scheduled Successfully</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --chocolate:#3b1f0f;
+  --dark-brown:#2a140a;
+  --gold:#d4af37;
+  --light-gold:#f6e7b2;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(to bottom,var(--dark-brown),var(--chocolate));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card{
+  background:var(--light-gold);
+  padding:50px 40px;
+  border-radius:20px;
+  max-width:500px;
+  text-align:center;
+}
+
+.card h1{
+  color:var(--gold);
+  margin-bottom:15px;
+}
+
+.card p{
+  color:#5a4a2f;
+  margin-bottom:25px;
+  line-height:1.6;
+}
+
+.card a{
+  display:inline-block;
+  padding:12px 30px;
+  background:var(--gold);
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:500;
+}
+
+.card a:hover{
+  background:#b8962e;
+}
+</style>
+</head>
+
+<body onload="openWhatsApp()">
+
+<div class="card">
+  <h1>Pickup Scheduled ✅</h1>
+  <p>
+    Thank you for submitting your details.<br>
+    We have sent you a WhatsApp confirmation.
+  </p>
+  <a href="index.html">Back to Home</a>
+</div>
+
+<script>
+function openWhatsApp() {
+
+  const params = new URLSearchParams(window.location.search);
+  let mobile = params.get("mobile");
+
+  if (!mobile) return;
+
+  // remove + sign for WhatsApp URL
+  mobile = mobile.replace("+","");
+
+  const message = encodeURIComponent(
+`Hello 👋
+
+Your cloth pickup request has been successfully scheduled ✅
+
+Our team will contact you shortly before pickup.
+
+Thank you for choosing MODASOU ✨`
+  );
+
+  window.open(`https://wa.me/${mobile}?text=${message}`, "_blank");
+}
+</script>
+
+</body>
+
+</html>

@@ -89,6 +89,13 @@ body {
   font-weight: 600;
 }
 
+.btn-measure button:hover {
+  background: #be85088f;
+}
+.btn-measure,
+.btn-measure * {
+  pointer-events: auto;
+}
 .submit-box a{
   text-decoration: none;
 }
@@ -232,10 +239,13 @@ body {
   </div>
 
   <div class="submit-box">
-<a href="service pages/measurement-blouse.html" id="measurementBtn" target="_blank" class="btn-measure ">
+<a href="/#" id="measurementBtn" target="_blank" class="btn-measure ">
   Add your measurements
-</a>
+</a>                      <span style="font-size: larger;">   OR  </span>      
 
+<a href="/send-your-cloth.html" id="measurementBtn2" target="_blank" class="btn-measure ">
+  Send your measurement cloth
+</a>
 
 
     
@@ -259,18 +269,26 @@ body {
         window.location.href = "measurement-dress.html";
         break;
 
-      case "blazer":
-        window.location.href = "measurement-blazer.html";
+      case "top":
+        window.location.href = "measurement-Tops.html";
         break;
-
+       
+      case "kurta":
+        window.location.href = "measurement-kurta.html";
+        break;
+  
       case "skirt":
         window.location.href = "measurement-skirt.html";
         break;
 
-      case "kurti":
-        window.location.href = "measurement-kurti.html";
+      case "lehenga":
+        window.location.href = "measurement-lehenga.html";
         break;
-
+       
+      case "pant":
+        window.location.href = "measurement-pants.html";
+        break;
+  
       default:
         alert("Please select a service first");
     }

@@ -249,7 +249,7 @@ button:hover{
   background: #f5e6b0;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
+}/*
 .or-text {
   align-self: center;
  margin-left: 45%;
@@ -257,7 +257,7 @@ button:hover{
   font-size: 20px;
   color: #fffdf7;
 
-}
+}*/
 
 
 .measurement-input-section h2 {
@@ -378,7 +378,9 @@ color: #fffdf7;
 font-size: 18px;
 
 }
-.submit-btn{
+
+  .submit-btn {
+  text-decoration: none;
   display: block;
   color: #331300;
   margin: 25px auto 0;
@@ -386,10 +388,16 @@ font-size: 18px;
   background: #d4af37;
   border: none;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 26px;
   cursor: pointer;
 }
-
+.submit-btn a{
+  color: #331300;
+  text-decoration: none;
+}
+.submit-btn a:hover{
+  color: #ccc;
+}
 /* MOBILE OPTIMIZATION */
 @media (max-width: 600px) {
   .measurement-guides img {
@@ -405,18 +413,19 @@ font-size: 18px;
   }
 
 }
-
 footer {
     text-align: center;
     padding: 2rem 1rem;
     background-color: #d4af37; /* Dark Brown */
-    color: #4b2e1f; /* Golden */
+    color: #f5e6b8; /* Golden */
     font-size: 0.9rem;
     
 }
 #p{
 font-family: 'CINZEL', serif;
 }
+
+
 </style>
 </head><!-- NAVBAR -->
 <header class="navbar">
@@ -592,43 +601,23 @@ font-family: 'CINZEL', serif;
         <span>in</span>
       </div>
     </div></div></div></section>
-    <div class="or-text">OR</div>
-
-
-     <section class="measurement-section">
-
-<div class="options-wrapper">
-  <!-- OPTIONS -->
-  <div class="measurement-input-section opttion-2">
-
-    <!-- OPTION 1 -->
-    
-
-    <!-- OPTION 2 -->
-    <div class="card" >
-      <h3>Option 2: Send Your Measurement Cloth</h3>
-      <p>We will arrange a pickup from your address.</p>
-
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="tel" placeholder="Mobile Number" required>
-        <textarea placeholder="Pickup Address (House No, Area, City, Pincode)" required></textarea>
-        <button type="submit">Schedule Cloth Pickup</button>
-      </form>
     </div>
-      </div>
-  </div></div>
 
   <p class="note">
     Your measurements are safe with us. Our team will contact you after submission.
   
-  </p><div>
+  </p>
+  
+ <div>
 
-    <a href="client-details.html" class="submit-btn">
+    <button type="submit" class="submit-btn"><a href="/client-details.html" >
   Proceed to Submit Measurements
 </a>
-
-  </div><br><br>
+</button>
+  </div> 
+  
+  
+  <br><br>
 
 
 <footer>

@@ -197,35 +197,49 @@ img {
   margin-top: 20px;
 }
 
-.submit-box button {
+.submit-box a{
   height: auto;
   max-width: 400px;
-  background: #111;
-  color: #fff;
+  background: #f5e6b0;
+  color: #331300;
   padding: 15px 40px;
-
+text-decoration: none;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 4px;
   cursor: pointer;
 }
-
-.submit-box button:hover {
-  background: #333;
+.submit-box a:hover {
+  background: #d4af37;
 }
 .card{
+  text-align: center;
+  position: relative;
+  left: 250px;
   width: 60%;
   background-color: #d4af37;
   max-height: 60vh;
-  margin-left: 30px;
+  padding-left: 20px;
   margin-top: 20px;
   border:2px solid black ;
+  
   line-height: normal;
   display: block;
   
-  padding-left: 24px;
   
   
+  
+}
+.card ::content{
+  align-items: center;
+}
+.card input{
+  width: 80%;
+  height: 40px;
+}
+.card p{
+  color: black;
+  font-size: 18px;
 }
 footer {
   text-align: center;
@@ -243,7 +257,7 @@ footer {
 
     <!-- NAV MENU -->
     <nav class="nav-menu">
-      <a href="index.html" class="active">Home</a>
+      <a href="/index.html" class="active">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="designers.html">Designers</a>
@@ -297,7 +311,7 @@ footer {
       id="imageUrl"
       placeholder="Paste ANY image link here"
     ><br>
-
+<br>
     <button onclick="loadImageFromUrl()">Use This Image</button>
 
     <img id="urlPreview">
@@ -306,11 +320,15 @@ footer {
   <!-- DESIGNERS (LAST) -->
   
   
+ <div class="submit-box">
+<a href="/#" id="measurementBtn" target="_blank"  >
+  Add your measurements
+</a>                      <span style="font-size: larger;">   OR  </span>      
 
-</main>
-<div class="submit-box">
-    <button>Submit Customization</button>
-  </div>
+<a href="/send-your-cloth.html" id="measurementBtn2" target="_blank" >
+  Send your measurement cloth
+</a></div>
+
 
 
 <br><br>
@@ -318,6 +336,47 @@ footer {
 <footer>
   © 2025 ModaSou
 </footer>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+
+  document.getElementById("measurementBtn").addEventListener("click", function () {
+    switch (service) {
+      case "blouse":
+        window.location.href = "measurement-blouse.html";
+        break;
+
+      case "dress":
+        window.location.href = "measurement-dress.html";
+        break;
+
+      case "top":
+        window.location.href = "measurement-Tops.html";
+        break;
+       
+      case "kurta":
+        window.location.href = "measurement-kurta.html";
+        break;
+  
+      case "skirt":
+        window.location.href = "measurement-skirt.html";
+        break;
+
+      case "lehenga":
+        window.location.href = "measurement-lehenga.html";
+        break;
+       
+      case "pant":
+        window.location.href = "measurement-pants.html";
+        break;
+  
+      default:
+        alert("Please select a service first");
+    }
+  });
+</script>
+
+
 
 <script>
 /* FILE PREVIEW */

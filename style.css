@@ -584,8 +584,8 @@ background-attachment: fixed;
 }
 
 .product-card .product-img {
-    height: 200px;
-    background-color: #d4af37; /* Dark Brown */
+    height: 30px;
+    background-color: #fff; /* Dark Brown */
     margin-bottom: 1rem;
     border-radius: 10px;
 }
