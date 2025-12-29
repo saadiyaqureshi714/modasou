@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>How It Works | MODASOU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#331300;
+  --primary-dark:#1f0b04;
+  --primary-light:#4d1f08;
+  --gold:#c8a951;
+  --gold-soft:#fccf55;
+  --bg:#fdd179;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: "Georgia","Times New Roman",serif;
+  background:var(--bg);
+  color:#2a1208;
+  line-height:1.9;
+}
+
+/* ========== NAVBAR ========== */
+.navbar{
+  background:linear-gradient(90deg,var(--primary),var(--primary-light));
+  padding:18px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:var(--gold);
+  font-size:26px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:30px;
+  margin:0;
+  padding:0;
+}
+
+.menu li{position:relative}
+
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+}
+
+.menu a:hover{color:var(--gold)}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  top:34px;
+  background:#fff;
+  min-width:220px;
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
+  padding:10px 0;
+}
+
+.dropdown:hover .dropdown-menu{display:block}
+
+.dropdown-menu a{
+  display:block;
+  padding:10px 20px;
+  color:#2a1208;
+}
+
+.dropdown-menu a:hover{background:var(--gold-soft)}
+
+/* ========== HERO ========== */
+.hero{
+  background:linear-gradient(180deg,var(--primary),var(--primary-dark));
+  color:#fff;
+  padding:90px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:44px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+/* ========== CONTENT ========== */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.section{
+  margin-bottom:80px;
+}
+
+.section h2{
+  font-size:32px;
+  color:var(--primary);
+  margin-bottom:10px;
+}
+
+.section h3{
+  font-size:22px;
+  color:var(--primary-light);
+  margin-bottom:30px;
+}
+
+.card{
+  background:#fff;
+  padding:40px;
+  margin-bottom:30px;
+  border-left:7px solid var(--gold);
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.step{
+  background:var(--gold-soft);
+  padding:15px 22px;
+  margin:14px 0;
+  border-left:4px solid var(--gold);
+  font-size:18px;
+}
+
+.substep{
+  margin-left:20px;
+  font-size:17px;
+}
+
+.note{
+  background:linear-gradient(135deg,var(--primary),var(--primary-light));
+  color:#fff;
+  padding:35px;
+  text-align:center;
+  font-size:20px;
+  margin-top:40px;
+}
+
+/* ========== FOOTER ========== */
+.footer{
+  background:var(--primary-dark);
+  color:#fff;
+  text-align:center;
+  padding:28px;
+  font-size:14px;
+}
+
+/* ========== MOBILE ========== */
+@media(max-width:700px){
+  .hero h1{font-size:32px}
+  .card{padding:25px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">MODASOU</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="#">About ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">About MODASOU</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Designers</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>How It Works</h1>
+  <p>
+    Get your garments stitched effortlessly with MODASOU’s expert fashion designers—
+    all from the comfort of your home!
+  </p>
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+<!-- SERVICE 1 -->
+<section class="section">
+  <h2>Our Services</h2>
+  <h3>1. Fabric Ready, Design Ready, Need Stitching</h3>
+
+  <div class="card">
+    <p><strong>You have the fabric and design—let us bring it to life!</strong></p>
+
+    <div class="step">1️⃣ Book Service – Select this service and start your order.</div>
+    <div class="step">2️⃣ Upload Fabric & Design – Share images of your fabric and the design you want stitched.</div>
+
+    <div class="step">3️⃣ Choose Fit Type – Select either:</div>
+    <div class="substep">● Garment Fit Clothing (send reference outfit for perfect fit)</div>
+    <div class="substep">● Online Body Measurement (upload or input your measurements)</div>
+
+    <div class="step">4️⃣ Customize Sleeves</div>
+    <div class="substep">● Pick from catalog</div>
+    <div class="substep">● Upload sleeves</div>
+    <div class="substep">● None</div>
+    <div class="substep">● Need help (our designer will call you shortly)</div>
+
+    <div class="step">5️⃣ Customize Neck (Front)</div>
+    <div class="substep">● Pick from catalog</div>
+    <div class="substep">● Upload neck</div>
+    <div class="substep">● None</div>
+    <div class="substep">● Need help (our designer will call you shortly)</div>
+
+    <div class="step">6️⃣ Customize Neck (Back)</div>
+    <div class="substep">● Pick from catalog</div>
+    <div class="substep">● Upload neck</div>
+    <div class="substep">● None</div>
+    <div class="substep">● Need help (our designer will call you shortly)</div>
+
+    <div class="step">7️⃣ Additional changes – Request the designer to call back</div>
+    <div class="step">8️⃣ Confirm Booking – Select a suitable time for a quick confirmation call.</div>
+    <div class="step">9️⃣ Payment Confirmation – Designer confirms cost & sends payment link.</div>
+    <div class="step">🔟 Payment Done – Stitching begins! Track your order.</div>
+    <div class="step">🕒 Choose the fabric pickup time</div>
+  </div>
+</section>
+
+<!-- SERVICE 2 -->
+<section class="section">
+  <h3>2. Fabric Ready, Need Design & Stitching</h3>
+
+  <div class="card">
+    <div class="step">1️⃣ Book Service – Start your order.</div>
+    <div class="step">2️⃣ Upload Your Fabric – Share images.</div>
+    <div class="step">3️⃣ Explore Design Options – Browse designers or search online.</div>
+    <div class="step">4️⃣ Share Alterations & Additional Information.</div>
+    <div class="step">5️⃣ Choose Fit Type – Garment fit or Online measurement.</div>
+    <div class="step">6️⃣ Confirm Order & Payment.</div>
+    <div class="step">7️⃣ Payment Done – Stitching starts. Track till delivery.</div>
+  </div>
+</section>
+
+<!-- SERVICE 3 -->
+<section class="section">
+  <h3>3. Have an Idea? Need Design & Stitching</h3>
+
+  <div class="card">
+    <div class="step">1️⃣ Select This Service</div>
+    <div class="step">2️⃣ Book Consultation</div>
+    <div class="step">3️⃣ Choose Preferred Time</div>
+    <div class="step">4️⃣ Chat with Our Fashion Designer</div>
+    <div class="step">5️⃣ Confirm Fabric & Design</div>
+    <div class="step">6️⃣ Receive Payment Link</div>
+    <div class="step">7️⃣ Provide Online Measurement</div>
+    <div class="step">8️⃣ Fabric & Design Sent for Production</div>
+    <div class="step">9️⃣ Track Your Order</div>
+  </div>
+</section>
+
+<!-- SERVICE 4 -->
+<section class="section">
+  <h3>4. Wardrobe Refresh & Style Revamp</h3>
+
+  <div class="card">
+    <div class="step">1️⃣ Book the Service</div>
+    <div class="step">2️⃣ Make the Payment</div>
+    <div class="step">3️⃣ Choose Preferred Time</div>
+    <div class="step">4️⃣ Video Call with Our Fashion Stylist</div>
+  </div>
+</section>
+
+<div class="note">
+  💛 <strong>MODASOU – Helping You Elevate Your Style Effortlessly!</strong>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 MODASOU — Crafted with Purpose, Fit & Sustainability
+</footer>
+
+</body>
+</html>

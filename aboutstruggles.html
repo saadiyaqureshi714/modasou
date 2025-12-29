@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Struggles of Everyday Fashion | MODASOU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --choco:#331300;
+  --dark:#241312;
+  --gold:#f1c64e;
+  --light-gold:#f3d47f;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: "Georgia","Times New Roman",serif;
+  background: var(--light-gold);
+  color: var(--dark);
+  line-height:1.8;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  background: var(--choco);
+  padding:18px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:26px;
+  color: var(--gold);
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:30px;
+  margin:0;
+  padding:0;
+}
+
+.menu li{
+  position:relative;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#fff;
+  font-size:16px;
+}
+
+.menu a:hover{
+  color:var(--gold);
+}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  top:32px;
+  left:0;
+  background:#fff;
+  min-width:220px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  padding:10px 0;
+  z-index:999;
+}
+
+.dropdown-menu a{
+  color:var(--dark);
+  padding:10px 20px;
+  display:block;
+  font-size:15px;
+}
+
+.dropdown-menu a:hover{
+  background:var(--light-gold);
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
+
+/* ================= CONTENT ================= */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+.page-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.page-title h1{
+  font-size:40px;
+  color:var(--choco);
+  margin-bottom:12px;
+}
+
+.page-title span{
+  display:inline-block;
+  width:120px;
+  height:3px;
+  background:var(--gold);
+}
+
+.story-box{
+  background:#fff;
+  padding:45px;
+  border-left:6px solid var(--gold);
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.story-box p{
+  font-size:18px;
+  margin-bottom:18px;
+}
+
+.bullet{
+  background:var(--light-gold);
+  padding:15px 20px;
+  border-left:4px solid var(--gold);
+  margin:15px 0;
+  font-style:italic;
+}
+
+.highlight{
+  font-weight:bold;
+  color:var(--choco);
+}
+
+.divider{
+  margin:50px 0;
+  border-top:2px dashed var(--gold);
+}
+
+.conclusion{
+  background:var(--choco);
+  color:#fff;
+  padding:40px;
+  margin-top:40px;
+  text-align:center;
+}
+
+.conclusion p{
+  font-size:20px;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:600px){
+  .page-title h1{
+    font-size:30px;
+  }
+  .story-box{
+    padding:25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="logo">MODASOU</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#">About ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">About MODASOU</a></li>
+        <li><a href="story-of-modasou.html">The Story of MODASOU</a></li>
+        <li><a href="everyday-fashion-struggles.html">Everyday Fashion Struggles</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">Designers</a></li>
+    <li><a href="#">Sustainability</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============ CONTENT ============ -->
+<div class="container">
+
+  <div class="page-title">
+    <h1>👗 The Struggles of Everyday Fashion</h1>
+    <span></span>
+  </div>
+
+  <div class="story-box">
+    <p>
+      Growing up, my mother stitched all my clothes. They weren’t just perfectly tailored—they
+      were long-lasting, vibrant, and never wore out easily. Each piece was crafted with care,
+      ensuring that it remained a staple in my wardrobe for years.
+    </p>
+
+    <p>
+      Fast forward to my college days and beyond, I still cherished those clothes. But with the
+      rise of online shopping, I started choosing ready-made attire for the sake of convenience.
+      It seemed easier, faster—but was it really better?
+    </p>
+
+    <div class="bullet">🛍 <span class="highlight">Online shopping?</span> Clothes often arrived ill-fitting, mismatched, or poor in quality.</div>
+
+    <div class="bullet">🧵 <span class="highlight">Custom tailoring?</span> So many unstitched saree blouses piled up in my wardrobe because I never found the time to get them stitched.</div>
+
+    <div class="bullet">💰 <span class="highlight">Fast fashion?</span> Everything was designed to wear out quickly, forcing us to buy more and waste more.</div>
+
+    <p>
+      I searched for an online platform that could help me customize and tailor clothes
+      effortlessly, just like the perfectly stitched outfits my mother made. While a few online
+      customized clothing platforms existed, they came with their own set of frustrations:
+    </p>
+
+    <div class="bullet">🚫 Not user-friendly – Too many confusing tabs, and some didn’t even work.</div>
+    <div class="bullet">⏳ Time-consuming – The entire process felt tedious rather than seamless.</div>
+    <div class="bullet">🏠 Strangers entering my home? No thanks! I didn’t want to rely on someone visiting just to take measurements.</div>
+    <div class="bullet">📦 Slow delivery – Waiting more than a month for a custom outfit wasn’t practical.</div>
+
+    <div class="divider"></div>
+
+    <div class="conclusion">
+      <p>
+        I realized that something was missing—a platform that blends the craftsmanship of custom
+        tailoring with the ease and efficiency of online shopping.
+        <br><br>
+        <strong>That’s when MODASOU was born.</strong>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  © 2026 MODASOU — Crafted with Purpose, Customization & Sustainability
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Birth of MODASOU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#331300;
+  --gold:#d8af3e;
+  --light-gold:#f3d47f;
+  --dark:#1a0a05;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: "Georgia","Times New Roman",serif;
+  background:var(--light-gold);
+  color:var(--dark);
+  line-height:1.9;
+}
+
+/* ============ NAVBAR ============ */
+.navbar{
+  background:var(--primary);
+  padding:18px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:var(--gold);
+  font-size:26px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:30px;
+  margin:0;
+  padding:0;
+}
+
+.menu li{
+  position:relative;
+}
+
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+}
+
+.menu a:hover{
+  color:var(--gold);
+}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  top:34px;
+  left:0;
+  background:#fff;
+  min-width:230px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+  padding:10px 0;
+  z-index:999;
+}
+
+.dropdown-menu a{
+  color:var(--dark);
+  padding:10px 22px;
+  display:block;
+}
+
+.dropdown-menu a:hover{
+  background:var(--light-gold);
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
+
+/* ============ CONTENT ============ */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:55px;
+}
+
+.title h1{
+  font-size:42px;
+  color:var(--primary);
+  margin-bottom:14px;
+}
+
+.title span{
+  display:inline-block;
+  width:140px;
+  height:3px;
+  background:var(--gold);
+}
+
+.story{
+  background:#fff;
+  padding:50px;
+  border-left:7px solid var(--primary);
+  box-shadow:0 18px 40px rgba(0,0,0,0.1);
+}
+
+.story h2{
+  color:var(--primary);
+  font-size:26px;
+  margin-bottom:20px;
+}
+
+.story p{
+  font-size:19px;
+  margin-bottom:20px;
+}
+
+.idea{
+  background:var(--light-gold);
+  padding:18px 22px;
+  border-left:4px solid var(--gold);
+  margin:16px 0;
+  font-style:italic;
+  font-size:18px;
+}
+
+.meaning{
+  background:var(--primary);
+  color:#fff;
+  padding:35px;
+  margin:40px 0;
+  font-size:20px;
+  text-align:center;
+}
+
+.points{
+  margin-top:25px;
+}
+
+.points p{
+  font-size:18px;
+  margin:10px 0;
+}
+
+.closing{
+  background:linear-gradient(135deg, var(--primary), #4a1d00);
+  color:#fff;
+  padding:45px;
+  text-align:center;
+  font-size:21px;
+  margin-top:50px;
+}
+
+/* ============ FOOTER ============ */
+.footer{
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  padding:28px;
+  font-size:14px;
+}
+
+/* ============ MOBILE ============ */
+@media(max-width:600px){
+  .title h1{
+    font-size:30px;
+  }
+  .story{
+    padding:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo">MODASOU</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#">About ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">About MODASOU</a></li>
+        <li><a href="story-of-modasou.html">The Story of MODASOU</a></li>
+        <li><a href="everyday-fashion-struggles.html">Everyday Fashion Struggles</a></li>
+        <li><a href="birth-of-modasou.html">The Birth of MODASOU</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">Designers</a></li>
+    <li><a href="#">Sustainability</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== CONTENT ===== -->
+<div class="container">
+
+  <div class="title">
+    <h1>The Birth of MODASOU</h1>
+    <span></span>
+  </div>
+
+  <div class="story">
+    <h2>💡 From a Problem to a Purpose</h2>
+
+    <div class="idea">🌱 What if we bring back long-lasting, customized clothing?</div>
+    <div class="idea">🌱 What if we empower designers and customers to create perfect-fitting outfits?</div>
+    <div class="idea">🌱 What if we help reduce fashion waste by making quality clothes that actually last?</div>
+
+    <p>
+      This vision led to MODASOU—a platform designed to connect fashion designers and clients,
+      making custom fashion accessible, easy, and sustainable.
+    </p>
+
+    <div class="meaning">
+      💛 <strong>MODASOU</strong> means “Your Fashion” in Greek—because fashion should be made for you,
+      fit for you, and last for you.
+    </div>
+
+    <p>Today, MODASOU stands for:</p>
+
+    <div class="points">
+      <p>✅ Personalized, tailored clothing for everyone.</p>
+      <p>✅ Sustainable fashion choices that reduce waste.</p>
+      <p>✅ An effortless way to connect with designers and get the perfect fit.</p>
+    </div>
+
+    <div class="closing">
+      <p>
+        This isn’t just a business. It’s a movement to change the way we experience fashion—one custom
+        outfit at a time.
+        <br><br>
+        🌍 <strong>Join us in bringing sustainability and personalization back into fashion.</strong>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 MODASOU — Your Fashion. Your Fit. Your Future.
+</footer>
+
+</body>
+</html>

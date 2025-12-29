@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +41,7 @@ body {
 }
 
 .upload-box {
+  flex:1;
   border: 2px dashed black;
   padding: 30px;
   text-align: center;
@@ -61,7 +64,10 @@ body {
   cursor: pointer;
   display: inline-block;
 }
-
+.upload_wrapper{
+  display: flex;
+  gap:30px;
+}
 .preview {
   margin-top: 20px;
 }
@@ -134,63 +140,6 @@ body {
   z-index: 1000;
 }
 
-/* CONTAINER */
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* LOGO */
-.logo {
-  font-size: 26px;
-  font-weight: 700;
-  color: #4a2a18;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-
-.logo:hover {
-  color: var(--chocolate);
-}
-
-/* NAV MENU */
-.nav-menu a {
-  margin: 0 14px;
-  text-decoration: none;
-  color: var(--dark-brown);
-  font-weight: 500;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-/* HOVER EFFECT */
-.nav-menu a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background: var(--golden);
-  transition: 0.3s ease;
-}
-
-.nav-menu a:hover::after {
-  width: 100%;
-}
-
-/* ACTIVE PAGE */
-.nav-menu a.active {
-  color: var(--golden);
-}
-
-.nav-menu a.active::after {
-  width: 100%;
-}
 
 </style>
 </head>
@@ -218,43 +167,71 @@ body {
 
 <div class="container">
 
+  
+  
   <!-- Fabric Upload -->
-  <div class="upload-box">
+  <div class="upload-box"> 
     <h3>Upload Fabric Photo</h3>
+
     <label for="fabricUpload">Choose Fabric Image</label>
-    <input type="file" id="fabricUpload" accept="image/*">
+    <input 
+      type="file" 
+      id="fabricUpload" 
+      name="fabric_image" 
+      accept="image/*"
+      required
+    >
+
     <div class="preview">
       <img id="fabricPreview">
     </div>
-  </div>
+</div>
 
   <!-- Design Upload -->
   <div class="upload-box">
     <h3>Upload Your Design</h3>
+
     <label for="designUpload">Choose Design Image</label>
-    <input type="file" id="designUpload" accept="image/*">
+    <input 
+      type="file" 
+      id="designUpload" 
+      name="design_image" 
+      accept="image/*"
+    >
+
     <div class="preview">
       <img id="designPreview">
     </div>
-  </div>
-
-  <div class="submit-box">
-<a href="/#" id="measurementBtn" target="_blank" class="btn-measure ">
-  Add your measurements
-</a>                      <span style="font-size: larger;">   OR  </span>      
-
-<a href="/send-your-cloth.html" id="measurementBtn2" target="_blank" class="btn-measure ">
-  Send your measurement cloth
-</a>
-
-
-    
-
-
-
-  </div>
-
 </div>
+
+  <!-- Buttons -->
+  <div class="submit-box">
+
+    <button 
+      type="submit" 
+      name="next_step" 
+      value="manual" 
+      class="btn-measure">
+      Add your measurements
+    </button>
+
+    <span style="font-size: larger;"> OR </span>
+
+    <button 
+      type="submit" 
+      name="next_step" 
+      value="cloth" 
+      class="btn-measure">
+      Send your measurement cloth
+    </button>
+
+  </div>
+
+
+  
+  </div>
+
+
 <script>
   const params = new URLSearchParams(window.location.search);
   const service = params.get("service");

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Story of MODASOU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --choco:#331300;
+  --dark:#2a1715;
+  --gold:#c8a951;
+  --light-gold:#f1d67b;
+}
+
+body{
+  margin:0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: var(--light-gold);
+  color: var(--dark);
+  line-height: 1.8;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  background: var(--choco);
+  padding:18px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:26px;
+  color: var(--gold);
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:30px;
+  margin:0;
+  padding:0;
+}
+
+.menu li{
+  position:relative;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#fff;
+  font-size:16px;
+}
+
+.menu a:hover{
+  color:var(--gold);
+}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  top:32px;
+  left:0;
+  background:#fff;
+  min-width:220px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  padding:10px 0;
+  z-index:999;
+}
+
+.dropdown-menu a{
+  color:var(--dark);
+  padding:10px 20px;
+  display:block;
+  font-size:15px;
+}
+
+.dropdown-menu a:hover{
+  background:var(--light-gold);
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
+
+
+.story-container{
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.page-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.page-title h1{
+  font-size:42px;
+  color: var(--choco);
+  margin-bottom:10px;
+}
+
+.page-title span{
+  display:inline-block;
+  height:3px;
+  width:120px;
+  background: var(--gold);
+}
+
+.story-section{
+  background:#fff;
+  padding:40px;
+  margin-bottom:40px;
+  border-left:6px solid var(--gold);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.story-section h2{
+  color: var(--choco);
+  font-size:26px;
+  margin-bottom:15px;
+}
+
+.story-section p{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.highlight{
+  color: var(--choco);
+  font-weight: bold;
+}
+
+.question{
+  margin:20px 0;
+  padding:15px 20px;
+  background: var(--light-gold);
+  border-left:4px solid var(--gold);
+  font-style: italic;
+}
+
+.closing{
+  background: var(--choco);
+  color:#fff;
+  padding:40px;
+  text-align:center;
+  border-radius:6px;
+}
+
+.closing p{
+  font-size:20px;
+}
+
+
+.footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+@media(max-width:600px){
+  .page-title h1{
+    font-size:32px;
+  }
+  .story-section{
+    padding:25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="logo">MODASOU</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#">About ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">About MODASOU</a></li>
+        <li><a href="story-of-modasou.html">The Story of MODASOU</a></li>
+        <li><a href="everyday-fashion-struggles.html">Everyday Fashion Struggles</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">Designers</a></li>
+    <li><a href="#">Sustainability</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+<div class="story-container">
+
+  <div class="page-title">
+    <h1>The Story of MODASOU</h1>
+    <span></span>
+  </div>
+
+  <div class="story-section">
+    <h2>A Journey Begins</h2>
+    <p>🌍 <span class="highlight">From Science to Sustainability</span></p>
+
+    <p>
+      I am a genomics consultant with over eight years of experience working with startups.
+      My journey has always been about solving real-world problems, but I never imagined that
+      my next venture would take me beyond genetics—into the world of fashion and sustainability.
+    </p>
+
+    <p>
+      MODASOU was not just an idea; it was born from a series of eye-opening moments that made me
+      question the way we consume fashion.
+    </p>
+  </div>
+
+  <div class="story-section">
+    <h2>📍 A Beautiful Waterfall, A Disturbing Sight</h2>
+
+    <p>
+      In 2015, I visited Hogenakkal Falls, a breathtaking place where the Kaveri River creates
+      a mesmerizing smoky effect as it gathers speed. It was supposed to be a serene escape,
+      but what I saw that day haunted me for years.
+    </p>
+
+    <p>
+      Instead of just enjoying the beauty of the falls, my eyes were drawn to piles of discarded
+      clothes scattered all around. As I walked a little further, I saw trucks being loaded with
+      these used clothes—left behind by people after bathing in the river.
+    </p>
+
+    <div class="question">❓ Where did all these clothes go?</div>
+    <div class="question">❓ How could we reduce this burden on our planet?</div>
+
+    <p>
+      I thought about recycling—but that wouldn’t solve the core issue. Burning them into ashes?
+      That’s just another temporary fix. The real problem lies deeper—it's not just about waste
+      management, it’s about people’s mindset.
+    </p>
+
+    <div class="question">🛑 Why do we consume and discard fashion so easily?</div>
+    <div class="question">🛑 Why don’t we value clothes the way previous generations did?</div>
+    <div class="question">🛑 Why is sustainability always an afterthought in fashion?</div>
+  </div>
+
+  <div class="story-section">
+    <p>This question stayed with me for a decade. I kept asking myself:</p>
+
+    <div class="question">💡 How can we change this mindset?</div>
+    <div class="question">💡 How do we make people see fashion as an investment, not a disposable item?</div>
+    <div class="question">💡 How can we shift from fast fashion to meaningful, long-lasting choices?</div>
+  </div>
+
+  <div class="closing">
+    <p>
+      And that’s when I realized—we don’t just need a solution for fashion waste;
+      <br><br>
+      <strong>we need a movement to change how people think about fashion itself.</strong>
+      <br><br>
+      This thought planted the seed for <strong>MODASOU</strong>—a way to bring back
+      customization, longevity, and sustainability to fashion.
+    </p>
+  </div>
+
+</div>
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  © 2026 MODASOU — Crafted with Purpose, Customization & Sustainability
+</footer>
+
+
+</body>
+</html>
